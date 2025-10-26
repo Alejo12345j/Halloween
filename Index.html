@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fiesta de disfraces</title>
+
+  <!-- Tipografías (título “tenebroso” + texto legible) -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <div class="bg-decor">
+    <div class="moon"></div>
+    <div class="bats" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <main class="card" role="main">
+    <header class="hero">
+      <h1 class="title">Fiesta de disfraces</h1>
+      <p class="tagline">¡Ven con tu mejor disfraz! 🎃</p>
+      <!-- Edita estos placeholders a tu gusto -->
+      <p class="details">
+        <strong>Fecha:</strong> Sábado 1 de Noviembre &nbsp;|&nbsp;
+        <strong>Hora:</strong> 7:00 p.m.
+      </p>
+    </header>
+
+    <section class="invite-text" aria-label="Texto de invitación">
+      <!-- Pega aquí tu texto de invitación -->
+      <p>
+        Prepárate para una noche donde lo único obligatorio es venir disfrazado y con ganas de pasarla bien.
+        Sin reglas, sin formalidades — solo buena vibra, música, risas y amigos.
+        Ven a disfrutar, a mostrar tu mejor (o peor) disfraz, y a crear recuerdos épicos entre risas y sustos.
+      </p>
+    </section>
+
+    <div class="actions">
+      <button class="btn btn-accent" id="btn-direccion" aria-haspopup="dialog" aria-controls="modal-direccion">
+        Dirección
+      </button>
+      <!-- Si quieres otro botón, lo agregas aquí -->
+      <!-- <a class="btn" href="#" target="_blank" rel="noopener">Confirmar asistencia</a> -->
+    </div>
+  </main>
+
+  <!-- Modal Dirección -->
+  <div class="modal" id="modal-direccion" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal__dialog">
+      <button class="modal__close" id="close-modal" aria-label="Cerrar">×</button>
+      <h2 class="modal__title" id="modal-title">Cómo llegar</h2>
+        <div class="modal__body">
+            <p>Las uvas, Tegucigalpa</p>
+            <a href="https://waze.com/ul/hd43zyfbux" target="_blank" rel="noopener" class="btn-waze">
+                🚗 Abrir en Waze
+            </a>
+        </div>
+    </div>
+    <div class="modal__backdrop" id="modal-backdrop" aria-hidden="true"></div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
